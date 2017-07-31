@@ -37,7 +37,7 @@ class Client extends Actor {
   private val broadcastAgent = context.system.actorSelection("/user/DHCP-broadcast-agent")
 
   override def preStart() = {
-    println("DHCP Client preStart for " + clientHardwareAddress)
+    println("DHCP Client coming on line for " + clientHardwareAddress)
 
     val sleepMs = Math.random() * 5000
     Thread.sleep(sleepMs.round)

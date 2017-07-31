@@ -25,10 +25,6 @@ class BroadcastAgent extends Actor {
   private val serverId = "/user/DHCP-server"
   private val clientPath = "/user/DHCP-client*"
 
-  override def preStart() = {
-    println("BroadcastAgent preStart")
-  }
-
   def receive = {
     /** Look on client/server for unicast message handling */
 

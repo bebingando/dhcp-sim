@@ -25,7 +25,7 @@ import akka.actor.{Actor, ActorRef}
 
 class Server extends Actor {
   override def preStart() = {
-    println("DHCP Server preStart")
+    println("DHCP Server coming on line at " + ServerAddress)
   }
 
   private val ServerAddress = "192.168.1.1"
