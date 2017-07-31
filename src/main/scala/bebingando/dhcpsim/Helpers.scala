@@ -21,6 +21,6 @@ import akka.actor.{ActorSystem, Props}
 object MacGenerator {
   def getMac: String = {
     val rnd = new scala.util.Random
-    (0 until 4).map(i => rnd.nextInt(256).toHexString).mkString(":")
+    (0 until 6).map(i => rnd.nextInt(256).toHexString).mkString(":")
   }
 }
